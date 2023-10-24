@@ -9,7 +9,6 @@ def push(self, element):
     self.stack.append(element)
 
 
-
 """----------------Python code for pop operation------------------------"""
 def pop(self):
 Check whether a stack is empty or not
@@ -22,7 +21,7 @@ Pop the element from a stack
   else:
       return "Stack Already Empty"
 
-
+#-----------------------------------------Stack oprations----------------------------------------------------#
 S = []
 top = None
 def isEmpty(stk):
