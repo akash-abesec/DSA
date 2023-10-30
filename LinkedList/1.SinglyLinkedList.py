@@ -17,3 +17,11 @@ def Streversing(head):
     return
   print(head.val)
   Straversing(head.next)
+#--------------------------Insertion in Linked List----------------------#
+def insertatbeg(curr,data):
+    #Insert at begin of LinkedList
+    newNode=Node(data)
+    if curr==None:
+        return newNode
+    newNode.next=curr
+    return newNode
