@@ -1,14 +1,14 @@
 # ---------------- Implementation of Singly linked(Node)---------------#
-"""class Node:
+class Node:
     def __init__(self, data):
         self.data = data
         self.next = None
     def __int__(self):
-        self.head = None"""
+        self.head = None
 
 
 # ------------ Traversal in linked lis  -----------------#
-"""# Simple Traversal of linkedlist
+# Simple Traversal of linkedlist
 def Traversal(head):
     while (head != None):
         print(head.data, end="")
@@ -21,21 +21,21 @@ def RPrint(head):
         return
     print(head.data, end = " ")
     RPrint(head.next)
-"""
+
 
 
 # ------------- Insertion of Linked list ----------------#
 # Insert at begin od linked list
-"""def InsertBeg(head, data):
+def InsertBeg(head, data):
     newNode = Node(data)
     if head == None:
         return newNode
     newNode.next = head
     return  newNode
-"""
+
 
 # Insertion at the end of linked list
-"""def InsertEnd(head, data):
+def InsertEnd(head, data):
     newNode = Node(data)
     temp = head
     if temp == None:
@@ -44,11 +44,11 @@ def RPrint(head):
         temp = temp.next
     temp.next = newNode
     return head
-"""
+
 
 
 # Insertion at a given position
-"""def InsertAtPos(head, pos, data):
+def InsertAtPos(head, pos, data):
     newNode = Node(data)
     if pos == 1:
         newNode.next = head
@@ -61,11 +61,11 @@ def RPrint(head):
     newNode.next = curr.next 
     curr.next = newNode
     return head
-"""
+
 
 
 # Insert in a Sorted Singly Linked List
-"""def sortInsert(head, data):
+def sortInsert(head, data):
     newNode = Node(data)
     if head == None:
         return newNode
@@ -81,18 +81,18 @@ def RPrint(head):
         temp = temp.next
     temp.next = newNode
     return head
-"""
+
 
 # ---------------- Deletion in linkedlist ------------------#
 # Delete at first Node
-"""def deletebeg(head):
+def deletebeg(head):
     if head == None:
         return head
     return head.next
-"""
+
 
 # Delete at last Node
-"""def deleteLast(head):
+def deleteLast(head):
     temp = head
     if head == None:
         return head
@@ -100,11 +100,11 @@ def RPrint(head):
         temp = temp.next
     temp.next = None
     return head
-"""
+
 
 
 # Deleting in Sorted linkedlist
-"""def removeDuplicate(head):
+def removeDuplicate(head):
     if head == None or head.next == None:
         return head
     temp = head
@@ -114,12 +114,11 @@ def RPrint(head):
         else:
             temp = temp.next
     return head
-"""
 
 
 # ------------------------ Searching in a linkedlist --------------------- #
 # Iterative Method
-"""def itSearch(head, x):
+def itSearch(head, x):
     pos = 1
     curr = head
     while (curr != None):
@@ -129,11 +128,10 @@ def RPrint(head):
             pos += 1
             curr = curr.next
     return -1
-"""
 
 
 # Recursive Method
-"""def RecSearch(head, x):
+def RecSearch(head, x):
     if head ==None :
         return -1
     if head.val == x:
@@ -144,11 +142,10 @@ def RPrint(head):
             return -1
         else:
             return res + 1
-"""
 
 
 # Searching Middle element
-"""def MiddleEle(head):
+def MiddleEle(head):
     if head == None:
         return
     elif head.next == None:
@@ -159,11 +156,10 @@ def RPrint(head):
         slow = slow.next
         fast = fast.next.next
     return slow.val
-"""
 
 
 # Searching nth Node from end of Linkedlist
-"""def nthNodeFromEnd(head, pos):
+def nthNodeFromEnd(head, pos):
     if head == None:
         return
     first = head
@@ -175,12 +171,11 @@ def RPrint(head):
         second = second.next
         first = first.next
     return second.val
-"""
 
 
 # -------------------- Reverse a Singly LinkedList -------------------------#
 # reversing linkedlist iterative method
-"""def reverse(head):
+def reverse(head):
     if head == None or head.next == None:
         return head
     pre = None
@@ -191,21 +186,19 @@ def RPrint(head):
         pre = head
         head = temp
     return pre
-"""
 
 
 # Reversing Linkedlist by recursive Method
-"""def recReverse(head, prev = None):
+def recReverse(head, prev = None):
     if head == None:
         return prev
     temp = head.next
     head.next = prev
     return recReverse(temp, head)
-"""
 
 
 # -----------------------Creating multiple node  -----------------#
-"""head = Node(9)
+head = Node(9)
 n1=Node(40)
 n2=Node(40)
 n3=Node(79)
@@ -213,7 +206,6 @@ head.next=n1
 n1.next=n2
 n2.next=n3
 Traversal(head)
-"""
 
 
 # ===================================== Doubly linked list ============================================= #
@@ -227,19 +219,19 @@ class Node:
 
 # ---------------------- Traversal --------------------- #
 # Simple traversal
-"""def traversal(curr):
+def traversal(curr):
     while(curr != None):
         print(curr.val, end = " ")
         curr = curr.next
-"""
+
 
 # Recursive Traversal
-"""def RecTraversal(curr):
+def RecTraversal(curr):
     if curr == None:
         return
     print(curr.val, end = " ")
     RecTraversal(curr.next)
-"""
+
 
 
 # ----------------------- Insertion -------------------------#
