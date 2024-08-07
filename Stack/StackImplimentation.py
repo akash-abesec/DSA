@@ -15,7 +15,7 @@ Check whether a stack is empty or not
 
   if not self.isEmpty():
       item = self.stack[-1]
-Pop the element from a stack
+# Pop the element from a stack
       del self.stack[-1]
       return item
   else:
